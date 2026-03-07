@@ -7,6 +7,69 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
   <style>
+    <script>
+const CONFIG = {
+
+  /* ══════════════════════════════════════════════════════
+     📧  EMAIL — OPTION 1: Web3Forms  (RECOMMENDED — FREE)
+     ══════════════════════════════════════════════════════
+     SETUP (2 minutes, no login):
+     1. Go to  https://web3forms.com
+     2. Enter your Gmail / email address → Click "Create Access Key"
+     3. Copy the Access Key and paste below
+     ────────────────────────────────────────────────────── */
+  WEB3FORMS_KEY: "7b5db4aa-23d5-420c-b289-f2afdef785a7",   // ← paste here
+
+  /* ══════════════════════════════════════════════════════
+     📧  EMAIL — OPTION 2: EmailJS  (Direct Gmail — FREE)
+     ══════════════════════════════════════════════════════
+     SETUP (5 minutes):
+     1. Go to  https://emailjs.com  → Sign Up free
+     2. Add Service → Connect your Gmail
+     3. Copy Service ID  → paste in EMAILJS_SERVICE_ID
+     4. Create Email Template → Copy Template ID → paste in EMAILJS_TEMPLATE_ID
+     5. Go to Account → Public Key → paste in EMAILJS_PUBLIC_KEY
+     ────────────────────────────────────────────────────── */
+  EMAILJS_SERVICE_ID:  "service_n7lsh3i",
+  EMAILJS_TEMPLATE_ID: "template_lfnhte9",
+  EMAILJS_PUBLIC_KEY:  "AbqJQ_sj9Oiq06rVw",
+
+  /* ══════════════════════════════════════════════════════
+     💬  WHATSAPP  (just change the number)
+     ══════════════════════════════════════════════════════
+     Format: country code + number, NO + or spaces
+     India example: 916384653389  (91 = India code)
+     ────────────────────────────────────────────────────── */
+  WHATSAPP_NUMBER: "916384653389",              // ← your number
+
+  /* ══════════════════════════════════════════════════════
+     💳  RAZORPAY  (get free at razorpay.com → API Keys)
+     ══════════════════════════════════════════════════════ */
+  RAZORPAY_KEY:   "YOUR_RAZORPAY_KEY_ID",
+
+  /* ══════════════════════════════════════════════════════
+     🔐  ADMIN DASHBOARD PASSWORD
+     ══════════════════════════════════════════════════════ */
+  ADMIN_PASSWORD: "coco2025admin",              // ← change this!
+
+  /* ══════════════════════════════════════════════════════
+     📊  GOOGLE SHEETS  (optional — saves orders to sheet)
+     ══════════════════════════════════════════════════════ */
+  GOOGLE_SHEET_URL: "https://docs.google.com/spreadsheets/d/1gOtCb3XJ2z-T75Mw6wQY2RSr430dVca13lHk56rD3oE/edit?usp=sharing",
+
+  /* ══════════════════════════════════════════════════════
+     🏢  COMPANY DETAILS
+     ══════════════════════════════════════════════════════ */
+  COMPANY_NAME:  "RAJESHWARI TRADERS.",
+  COMPANY_EMAIL: "rajeshwaritraders12@gmail.com",     // ← your email
+  COMPANY_PHONE: "+91 9080653388"              // ← your phone
+};
+</script>
+
+<!-- EmailJS SDK (loads only if configured) -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<style>
     /* ─── Reset & Variables ───────────────────────────────── */
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
